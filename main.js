@@ -9,8 +9,9 @@
                         this.title = object.title;
                         this.byId = object.byId;
                         this.width = object.width;
+                        this.background = object.background;
                         this.template = `
-                            <div id="` + this.id + `" style = "width:` + this.width + `px; background: #78ffd6">
+                            <div id="` + this.id + `" style = "width:` + this.width + `px; background:` + this.background + `">
                                 <h2>Widget_1 DEMO</h2>
                                 <div id="authorContainer">
                                     <div>
@@ -25,7 +26,7 @@
                         this.countRabbits = countRabbits = () => {
                             this.title = this.count++;
                             this.template = `
-                            <div id="` + this.id + `" style = "width:` + this.width + `px; background: #78ffd6">
+                            <div id="` + this.id + `" style = "width:` + this.width + `px; background:` + this.background + `">
                                 <h2>Widget_1 DEMO</h2>
                                 <div id="authorContainer">
                                     <div>
@@ -47,8 +48,9 @@
                         this.title = object.title;
                         this.byId = object.byId;
                         this.width = object.width;
+                        this.background = object.background;
                         this.template = `
-                            <div id="` + this.id + `" style = "width:` + this.width + `px; background: #78ffd6">
+                            <div id="` + this.id + `" style = "width:` + this.width + `px; background:` + this.background + `">
                                 <h2>Widget_2 DEMO</h2>
                                 <div id="authorContainer">
                                     <div>
@@ -63,7 +65,7 @@
                         this.countRabbits2 = countRabbits2 = () => {
                             this.title = this.count++;
                             this.template = `
-                            <div id="` + this.id + `" style = "width:` + this.width + `px; background: #78ffd6">
+                            <div id="` + this.id + `" style = "width:` + this.width + `px; background:` + this.background + `">
                                 <h2>Widget_2 DEMO</h2>
                                 <div id="authorContainer">
                                     <div>
