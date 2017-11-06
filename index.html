@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tutorial: Hello Dojo!</title>
+    <script src="main.js"></script>
+    <!--<script src="dojo.js"></script>-->
+</head>
+<body>
+ 	<div id="CircularGauge"></div>
+ 	<div id="CircularGauge2"></div>
+ 	<script type="text/javascript">
+        max.require('Widget_1');
+            var Widget_1 = new max.Widget_1({
+                background: [255, 255, 255, 0],
+                title: 'Value',
+                id: "glossyGauge",
+                width: 200,
+                height: 300,
+                byId: "CircularGauge"
+            });
+	    max.ready(Widget_1);
+
+        max.require('Widget_2');
+        var Widget_2 = new max.Widget_2({
+            background: [255, 255, 255, 0],
+            title: 'Value',
+            id: "glossyGauge",
+            width: 200,
+            height: 300,
+            byId: "CircularGauge2"
+        });
+        max.ready(Widget_2);
+</script>
+</body>
+</html>
