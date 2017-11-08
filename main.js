@@ -1,4 +1,3 @@
-// window.onload = function(){
 (function () {
     this.max = {
         require: function (widgetName) {
@@ -9,36 +8,9 @@
                         this.title = object.title;
                         this.byId = object.byId;
                         this.width = object.width;
+                        this.height = object.height;
                         this.background = object.background;
-                        this.template = `
-                            <div id="` + this.id + `" style = "width:` + this.width + `px; background:` + this.background + `">
-                                <h2>Widget_1 DEMO</h2>
-                                <div id="authorContainer">
-                                    <div>
-                                        <h3 data-dojo-attach-point="nameNode">Title: ` + this.title + `</h3>
-                                        <p data-dojo-attach-point="bioNode">Name</p>
-                                        <button onclick="countRabbits();">Click</button>
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-                        this.count = 0;
-                        this.countRabbits = countRabbits = () => {
-                            this.title = this.count++;
-                            this.template = `
-                            <div id="` + this.id + `" style = "width:` + this.width + `px; background:` + this.background + `">
-                                <h2>Widget_1 DEMO</h2>
-                                <div id="authorContainer">
-                                    <div>
-                                        <h3 data-dojo-attach-point="nameNode">Title: ` + this.title + `</h3>
-                                        <p data-dojo-attach-point="bioNode">Name</p>
-                                        <button onclick="countRabbits();">Click</button>
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-                            max.reload(this);
-                        }
+                        this.iframe = `<iframe src="http://leg-dev.artofushos.com/stages" width="` + this.width + `" height="` + this.height+ `" align="left"></iframe>`;
                     };
 
                     break;
@@ -48,36 +20,9 @@
                         this.title = object.title;
                         this.byId = object.byId;
                         this.width = object.width;
+                        this.height = object.height;
                         this.background = object.background;
-                        this.template = `
-                            <div id="` + this.id + `" style = "width:` + this.width + `px; background:` + this.background + `">
-                                <h2>Widget_2 DEMO</h2>
-                                <div id="authorContainer">
-                                    <div>
-                                        <h3 data-dojo-attach-point="nameNode">Title: ` + this.title + `</h3>
-                                        <p data-dojo-attach-point="bioNode">Name</p>
-                                        <button onclick="countRabbits2();">Click</button>
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-                        this.count = 0;
-                        this.countRabbits2 = countRabbits2 = () => {
-                            this.title = this.count++;
-                            this.template = `
-                            <div id="` + this.id + `" style = "width:` + this.width + `px; background:` + this.background + `">
-                                <h2>Widget_2 DEMO</h2>
-                                <div id="authorContainer">
-                                    <div>
-                                        <h3 data-dojo-attach-point="nameNode">Title: ` + this.title + `</h3>
-                                        <p data-dojo-attach-point="bioNode">Name</p>
-                                        <button onclick="countRabbits2();">Click</button>
-                                    </div>
-                                </div>
-                            </div>
-                        `;
-                            max.reload(this);
-                        }
+                        this.iframe = `<iframe src="https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-1/p720x720/15037258_522283707977855_271500074295360243_n.jpg?oh=fe12a09601442f9e971d131769261616&oe=5A6BB5DF" width="` + this.width + `" height="` + this.height+ `" align="left"></iframe>`;
                     };
                     break;
                 default:
@@ -85,16 +30,10 @@
             }
 
         },
-        reload: function (reload) {
-            document.getElementById(reload.byId).firstChild.remove();
-            var e = document.createElement('div');
-            e.innerHTML = reload.template;
-            document.getElementById(reload.byId).appendChild(e);
-        },
         ready: function (makeGauge) {
-            var e = document.createElement('div');
-            e.innerHTML = makeGauge.template;
-            document.getElementById(makeGauge.byId).appendChild(e);
+            var html = document.createElement('div');
+            html.innerHTML = makeGauge.iframe ;
+            document.getElementById(makeGauge.byId).appendChild(html);
         }
     }
 })();
