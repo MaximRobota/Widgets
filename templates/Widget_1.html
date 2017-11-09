@@ -1,10 +1,56 @@
-<div id="` + this.id + `" style = "width:` + this.width + `px; background:` + this.background + `">
-    <h2>Widget_1 DEMO</h2>
-    <div id="authorContainer">
-        <div>
-            <h3 data-dojo-attach-point="nameNode">Title: ` + this.title + `</h3>
-            <p data-dojo-attach-point="bioNode">Name</p>
-            <button onclick="countRabbits();">Click</button>
-        </div>
-    </div>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Widget_1</title>
+    <link  href="./widget_1.css" rel="stylesheet">
+</head>
+<body>
+<div id="Widget_1" class="container">
+	<div class="search-bar">
+		<h3>Search</h3>
+		<input placeholder="Shan Lixin" type="text" name="search"><span></span></input>
+		<button class="seting-btn"></button>
+	</div>
+	<div class="content">
+		<div class="header-title">
+			<span/><p>Search results</p>
+		</div>
+		<div class="body-user">
+			<div class="logo-user"><img src="./img-user.png" /></div>
+			<div class="user-info">
+				<h3>Shan Lixin</h3>
+				<h2>AGE:</h2><p>25</p>
+				<h2>ROLE</h2><p>Airport Duty Free Staff</p>
+			</div>
+			<div>
+				<button class="user-setting-btn" />
+			</div>
+		</div>
+		<div class="information-user">
+			<h3>INFORMATION</h3>
+			<div class="info-container">
+				<ul>
+					<li>
+						<div class="block-info-1">ADDRESS:</div>
+						<div class="block-info-2">Wangjiang Rd, Hantai Qu, Hanzhong, Shaanxi Sheng, China</div>
+					</li>
+					<li>
+						<div class="block-info-1">FAMILY STATUS:</div>
+						<div class="block-info-2">Married</div>
+					</li>
+					<li>
+						<div class="block-info-1">ID NUMBER:</div>
+						<div class="block-info-2">3334 222 211 44</div>
+					</li>
+					<li>
+						<div class="block-info-1">PHONE NUMBER:</div>
+						<div class="block-info-2">+86 961 222 0005</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </div>
+</body>
+</html>
