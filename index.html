@@ -2,43 +2,35 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Widget</title>
-    <script src="main.js"></script>
+    <title>Widgets SKN</title>
+    <script src="sdk.js"></script>
     <style type="text/css">@charset "UTF-8"; /*Main.css*/
-
-
-iframe {
-    box-shadow: 0px -1px 37px 0px rgba(0,0,0,0.75);
-    margin: 10px;
-    border: none;
-}
-</style>
+        iframe {
+            box-shadow: 0px -1px 37px 0px rgba(0,0,0,0.75);
+            margin: 10px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
  	<div id="Widget_1"></div>
  	<div id="Widget_2"></div>
  	<script type="text/javascript">
-        max.require('Widget_1');
-            var Widget_1 = new max.Widget_1({
-                background: 'rgb(223, 223, 223)',
-                title: 'Value',
-                id: "glossyGauge",
+        Widgets.require('Widget_1');
+            var Widget_1 = new Widgets.Widget_1({
                 width: 400,
                 height: 460,
                 byId: "Widget_1"
             });
-	    max.ready(Widget_1);
+	    Widgets.ready(Widget_1);
 
-        max.require('Widget_2');
-        var Widget_2 = new max.Widget_2({
-            background: 'rgb(210, 255, 188)',
-            title: 'Value',
-            id: "glossyGauge",
+        Widgets.require('Widget_2');
+        var Widget_2 = new Widgets.Widget_2({
             width: 425,
             height: 920,
             byId: "Widget_2"
         });
-        max.ready(Widget_2);
+        Widgets.ready(Widget_2);
 </script>
 </body>
 </html>

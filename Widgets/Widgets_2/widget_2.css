@@ -1,0 +1,125 @@
+body{
+	margin: 0;
+}
+h3{
+	margin: 0
+}
+button:focus,  input:focus{
+    outline: none;
+}
+.container{
+    font-family: sans-serif;
+    width: 100%;
+    overflow: auto;
+}
+.search-bar{
+	position: relative;
+	border-bottom: 1px solid #efebeb;
+	height: 50px;
+    line-height: 50px;
+}
+.search-bar input{
+	height: 30px;
+    border-radius: 5px;
+    width: 59%;
+    padding: 0 0 0 10px;
+}
+.search-bar span{
+    position: absolute;
+    background: url(./sprite3.png) 71px 0;
+    width: 17px;
+    height: 19px;
+    top: 17px;
+    right: 69px;
+}
+.search-bar button{
+    float: right;
+    border: none;
+    background: url(./sprite3.png) 22px 0px;
+    width: 22px;
+    height: 21px;
+    margin: 15px 16px 0 0;
+    background-size: 175px;
+}
+.search-bar h3{
+	float: left;
+	padding: 0 15px;
+	font-weight: 700;
+}
+.header-title p{
+    font-size: 14px;
+    color: #636161;
+    padding-left: 30px;
+}
+.logo-user{
+	float: left;
+	margin-left: 10px;
+}
+.user-info{
+    padding: 25px 0 0 10px;
+    width: 180px;
+    height: 140px;
+    float: left;
+}
+.user-info h3{
+    font-size: 18px;
+    color: #3a3838;
+}
+.user-info h2{
+    float: left;
+    margin: 10px 5px 0px 0px;
+    display: block;
+    font-size: 13px;
+    color: #c5c5c5;
+}
+.user-info p{
+    margin: 10px;
+    float: left;
+    display: block;
+    width: 108px;
+    font-size: 13px;
+    color: #514c4c;
+    line-height: 13px;
+    font-weight: 600;
+}
+.user-setting-btn {
+    float: right;
+    border: none;
+    background: url(./sprite3.png) 38px 0px;
+    width: 17px;
+    height: 17px;
+    margin: 23px 17px 0 0px;
+    background-size: 160px;
+}
+.information-user {
+    float: left;
+    width: 100%;
+}
+.information-user h3{
+	font-size: 12px;
+    color: #7e7373;
+    border-bottom: 1px solid #efebeb;
+    margin: 0 20px;
+    line-height: 20px;
+}
+.block-info-1 {
+    width: 40%;
+    float: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: #c6c6c5;
+}
+.block-info-2 {
+    color: #544e4e;
+    font-size: 14px;
+    width: 60%;
+    float: left;
+}
+.info-container ul {
+    margin: 0;
+    padding: 10px 20px;
+}
+.info-container ul li{
+	list-style-type: none;
+	line-height: 27px;
+}
